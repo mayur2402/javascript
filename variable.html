@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Variable</title>
+</head>
+
+<body>
+<h1>variable in javascript</h1>
+<script>
+
+//-----------------------------------------------------------------------//
+document.write("<h2>Using var keyword</h2>");
+//we can declare variable using var keyword 
+var num = 10;
+document.write("var num = ",num);
+//we can change value of variable after declaration using var keyword
+num = 20;
+document.write("<br>num = ",num)
+//we can redeclare variable using var keyword
+var num = 30;
+document.write("<br>var num = ",num)
+
+//-----------------------------------------------------------------------//
+document.write("<h2>using let keyword</h2>");
+//we can declare variable using let keyword
+let name = "mads4ever";
+document.write("let name = ",name);
+//we can change value of variable after declaration using let keyword
+name = "predict_output"
+document.write("<br>name = ",name);
+//we cannot redeclare variable using let keyword
+//let name = "mads4ever_predict_output";
+document.write("<br>let name = not allowed");
+
+//-----------------------------------------------------------------------//
+document.write("<h2>using const keyword</h2>");
+//we can declare variable using const keyword
+const flag = true;
+document.write("const flag = ",flag);
+//we cannot change value of variable after declaration using const keyword
+//flag = false
+document.write("<br>flag = not allowed");
+//we cannot redeclare variable using let keyword
+//const flag = "mads4ever_predict_output";
+document.write("<br>const flag = not allowed");
+
+//-----------------------------------------------------------------------//
+</script>
+</body>
+</html>

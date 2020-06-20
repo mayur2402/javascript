@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<title>loop</title>
+</head>
+
+<body>
+<h2>event in javascript</h2>
+
+<script>
+
+//while loop
+var cond = 1;
+document.write('<h3>while loop</h3>');
+document.write('<ul>');
+while(cond <= 10)
+{
+	document.write('<li>hello</li>');
+	cond++;
+}
+document.write('</ul>');
+
+//do while loop
+document.write('<h3>do-while loop</h3>');
+document.write('<ul>');
+var cond = 1;
+do
+{
+	document.write('<li>hello</li>');
+	cond++;
+}while(cond <= 10);
+document.write('</ul>');
+
+//for loop
+document.write('<h3>for loop</h3>');
+document.write('<ul>');
+for(var cond = 1; cond <= 10; cond++)
+{
+	document.write('<li>hello</li>');
+}
+document.write('</ul>');
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Event Page</title>
+<script>
+
+function fun()
+{
+	document.write('hello ');
+}
+function fun1()
+{
+	alert('hello');
+}
+function fun2()
+{
+	confirm('double click working');
+}
+function fun3()
+{
+	alert('right click working');
+}
+function fun4()
+{
+	document.write('hello ');
+}
+
+</script>
+</head>
+
+<body>
+
+<h2>event in javascript</h2>
+
+<!-- onclick = one click -->
+<!--when function button press fun function call-->
+<button onclick = "fun()">function</button>
+<br><br>
+
+<!--when alert button press fun1 function call -->
+<button onclick = "fun1()">alert</button>
+<br><br>
+
+<!-- ondblclick = two click -->
+<!--when we double click on double click me fun2 function call-->
+<p ondblclick = "fun2()">double click me</p>
+
+<!--oncontextmenu = right click -->
+<!--when we right click on right click me fun3 function call-->
+<p oncontextmenu = "fun3()">right click me</p>
+<br>
+
+<!--onmouseenter = mouse pointer on text -->
+<!-- when mouse pointer comes on text then fun4 function call -->
+<button onmouseenter = "fun4()">pointer on</button>
+<br><br>
+
+<!--onmouseout = mouse pointer remove from text -->
+<!-- when mouse pointer remove from text then fun4 function call -->
+<button onmouseout = "fun4()">pointer out</button>
+<br><br>
+
+<!--onmousedown = mouse pointer on text click-->
+<!-- when mouse pointer click text then fun4 function call -->
+<button onmousedown = "fun4()">click</button>
+<br><br>
+
+<!--onmouseup = mouse pointer click on text click an remove-->
+<!-- when mouse pointer click and remove from text then fun4 function call -->
+<button onmouseup = "fun4()">click & release</button>
+<br><br>
+
+</body>
+</html>

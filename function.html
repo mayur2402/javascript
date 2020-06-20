@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>function</title>
+
+<script>
+//------------------------------------------------------------//
+document.write('<h2>function in javascript</h2>');
+document.write('<h3>function without parameter</h3>');
+function Hello()
+{
+	document.write('<h4>hello world</h4>');
+}
+function Bye()
+{
+		document.write('<h4>bye world</h4>');	
+}
+
+Hello();
+Bye();
+Hello();
+Bye();
+
+//------------------------------------------------------------//
+document.write('<h2>function with parameter</h2>');
+function hello(name = 'Aniket')
+{
+	document.write('<h3>hello </h3>'+name);
+}
+function bye(name = 'Aniket')
+{
+		document.write('<h3>bye </h3>'+name);	
+}
+
+hello('sagar');
+bye('sagar');
+hello('devarshi');
+bye('devarshi');
+hello();
+bye();
+document.write('<br>');	
+
+//------------------------------------------------------------//
+document.write('<h2> function with return value </h2>');
+function HELLO()
+{
+	return 'mads4ever';
+}
+
+var n = HELLO();
+document.write('<br>',n,'<br>');
+
+//------------------------------------------------------------//
+document.write('<h2>local and global variable</h2>');
+var name = 'predict_output';	//global variable
+function instapage()
+{
+	var name1 = 'mads4ever';	//local variable	
+	document.write('<br>',name,'<br>');
+	document.write('<br>',name1,'<br>');
+}
+document.write('<br>',name,'<br>');
+instapage();
+//------------------------------------------------------------//
+</script>
+</head>
+</html>
+
