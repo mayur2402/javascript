@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>array page</title>
+</head>
+<body>
+<h2>array in javascript</h2>
+<h3>one dimensional array</h3>
+<script>
+var array = [10,20,30,40];
+document.write(array);
+document.write('<br>');
+var sum = 0;
+
+document.write('<br>');
+
+document.write('array elements are ')
+for(var i = 0;i<array.length;i++)
+{
+	document.write(array[i]);
+	document.write('<br>');
+	sum = sum+array[i];
+}
+document.write('<br>');
+document.write('sum of array elements is ',sum)
+document.write('<br>');
+
+var arr = new Array();
+
+arr[0] = 'mads4ever';
+arr[1] = 'predict_output';
+
+document.write('<br>');
+document.write(arr);
+document.write('<br>');
+
+var arr1 = new Array(3);
+for(var i = 0;i<3;i++)
+{
+	arr1[i] = prompt('Enter array number');
+}
+document.write('<br>');
+document.write(arr1);
+document.write('<br>');
+
+document.write('<br>');
+document.write('<h3>multidimensional array</h3>');
+
+var multi = [
+		['mumbai','pune','nashik','nagpur'],
+		['delhi','mohali','ranchi','noida'],
+		['chennai','hydrabad','benguluru','kolkata']
+	];
+	document.write('<h4>multi array</h4>');
+	for(var i=0;i<3;i++)
+	{
+		document.write(multi[i]);
+		document.write('<br>');
+	}
+	
+</script>
+</body>
+</html>
+

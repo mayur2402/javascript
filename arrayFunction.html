@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>array function</title>
+</head>
+
+<body>
+<script>
+
+	var multi = [
+		['mumbai','pune','nashik','nagpur'],
+		['delhi','mohali','ranchi','noida'],
+		['chennai','hydrabad','benguluru','kolkata']
+	];
+
+	document.write('<br>');
+	document.write('<h4>table of array</h4>');
+	document.write("<table border = '1px'>");
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+
+	document.write('<h4>sorting of array</h4>');
+
+	multi[0].sort()
+	multi[1].sort()
+	multi[2].sort()
+
+	document.write("<table border = '1px'>");	
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+
+	document.write('<h4>reverse of array</h4>');
+
+	multi[0].reverse()
+	multi[1].reverse()
+	multi[2].reverse()
+
+	document.write("<table border = '1px'>");
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+
+	document.write('<h4>pop of array</h4>');
+
+	multi[0].pop()
+	multi[1].pop()
+	multi[2].pop()
+
+	document.write("<table border = '1px'>");
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+	
+	document.write('<h4>push of array</h4>');
+
+	multi[0].push('satara')
+	multi[1].push('gurugram')
+	multi[2].push('mangulur')
+
+	document.write("<table border = '1px'>");
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+
+	document.write('<h4>shift of array</h4>');
+
+	multi[0].shift()
+	multi[1].shift()
+	multi[2].shift()
+
+	document.write("<table border = '1px'>");
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+
+	document.write('<h4>unshift of array</h4>');
+
+	multi[0].unshift('satara')
+	multi[1].unshift('gurugram')
+	multi[2].unshift('mangulur')
+
+	document.write("<table border = '1px'>");
+	for(var i=0;i<3;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+
+	document.write('<h4>deleting elements in array</h4>');
+	multi[0][3] = 'kolhapur';
+	delete multi[2];
+	
+	document.write("<table border = '1px'>");
+	for(var i=0;i<2;i++)
+	{
+		document.write('<tr>');
+		for(var j=0;j<4;j++)
+		{
+			document.write('<td>'+multi[i][j]+'</td>');
+		}
+		document.write('</tr>');
+	}
+	document.write('</table>');
+</script>
+</body>
+</html>
