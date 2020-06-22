@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>string page</title>
+<script>
+var str = ' javascriPt is A grEat language';
+document.write(str);
+document.write('<br><br>');
+document.write('length of string is '+str.length);
+
+document.write('<br><br>');
+document.write('lowercase string is '+str.toLowerCase());
+
+document.write('<br><br>');
+document.write('uppercase string is '+str.toUpperCase());
+
+document.write('<br><br>');
+document.write("'language' word is present in string? ",str.includes('language'));
+
+document.write('<br><br>');
+document.write('string starts with java? ',str.startsWith('java'));
+
+document.write('<br><br>');
+document.write('string ends with language? ',str.endsWith('language'));
+
+document.write('<br><br>');
+document.write("language' word is present in string at position ",str.search('language'));
+
+var str1 = 'javascript is a great language is';
+document.write('<br><br>');
+document.write(str1);
+
+document.write('<br><br>');
+document.write(str1.match(/is/g));
+
+document.write('<br><br>');
+document.write("'is' word is present in string at first index of ",str1.indexOf('is'));
+
+document.write('<br><br>');
+document.write("'is' word is present in string at first index of ",str1.lastIndexOf('is'));
+
+document.write('<br><br>');
+document.write(str1.replace('javascript','php'));
+
+document.write('<br><br>');
+document.write('character at position 5 ',str1.charAt(5));
+
+document.write('<br><br>');
+document.write('ASCII value of character at position 5 ',str1.charCodeAt(5));
+
+document.write('<br><br>');
+document.write(str1.concat(str));
+
+document.write('<br><br>');
+document.write(str1.split(' '));
+
+document.write('<br><br>');
+document.write(str1.repeat(2));
+
+document.write('<br><br>');
+document.write(str1.slice(4,10));
+
+document.write('<br><br>');
+document.write(str1.substr(15,15));
+
+document.write('<br><br>');
+document.write('ASCII value 20 is for ',String.fromCharCode(64));
+
+</script>
+<body>
+
+</body>
+</html>
+

@@ -4,7 +4,7 @@
 </head>
 <body>
 <script>
-
+document.write('<h1>Object</h1>');
 page = {
 	page1 : 'predict_output',
 	page2 : 'mads4ever',
@@ -12,10 +12,36 @@ page = {
 	page4 : 'progra_memer'
 	};
 
-document.write(page.page1,'<br>');
-document.write(page.page2,'<br>');
-document.write(page.page3,'<br>');
-document.write(page.page4,'<br>');
+for(var key in page)
+{
+	document.write(key,' ',page[key],'<br>');
+}
+document.write('<br>');
+var person = new Object();
+
+person.firstName = 'Sagar';
+person.lastName = 'Kumar';
+person.age = 21;
+
+for(var key in person)
+{
+	document.write(key,' ',person[key],'<br>');
+}
+
+document.write('<h1>object in array</h1>');
+person = [
+	{page : 'predict_output',post : 18},
+	{page : 'mads4ever',post : 0},
+	{page : 'coding vibes', post : 2},
+	{page : 'progra_memer',post : 20}
+	];
+
+for(var i = 0;i<person.length;i++)
+{
+	document.write(person[i].page,'\t',person[i].post,'<br>');
+}
+
 </script>
 </body>
 </html>
+
